@@ -1,0 +1,51 @@
+.image5{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image5 img{
+    margin-left: 5px;
+    border: 15px solid #f8fcfb;
+    animation: anime5 1s 1;
+    animation-timeline: view();
+}
+
+@keyframes anime5 {
+    0%{
+        transform: translateX(100px) rotateX(45deg) translateZ(100px) rotateZ(45deg);
+        opacity: 0;
+    }
+    50%{
+        transform: none;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.content5{
+    overflow: hidden;
+    margin: 50px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.content5 div:first-child{
+    display: inline-block;
+    font-size: 65px;
+    color:#f0f0f2;
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
